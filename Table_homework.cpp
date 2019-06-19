@@ -58,7 +58,7 @@ class Table{
 		void set(int x,int y,string z){
 			a[x][y]=z;
 		}
-		void delRow(int i){//¨¦?3y¦Ì¨²iDD 
+		void delRow(int i){//Ã©?3yÎ¼ÃºiDD 
 			 for(int j=i;j<row-1;j++){
 			 	string *p=a[j];
 			 	*a[j]=*a[j+1];
@@ -122,7 +122,7 @@ class Cell {
 		
 		Cell(char con[]);
 		
-		//¹¹Ôìº¯Êı 
+		//æ„é€ å‡½æ•° 
 
 		~Cell();
 
@@ -135,16 +135,16 @@ class Cell {
 		}
 		
 		
-		//ÏÔÊ¾³ÉÔ±cell.content
+		//æ˜¾ç¤ºæˆå‘˜cell.content
 
 	private:
 
-		string content;//string ÀàĞÍ content´æ´¢stringÄ£°å
+		string content;//string ç±»å‹ contentå­˜å‚¨stringæ¨¡æ¿
 
 };
 Cell::Cell(char con[]){
 	cout<<"Cell con[] add"<<endl;
-	cin>>con;//con ´«µİ¸østring content 
+	cin>>con;//con ä¼ é€’ç»™string content 
 	content=con;
 	
 			
@@ -166,15 +166,15 @@ class Table {
 			
 		}
 		
-		void show();//´ò±í
+		void show();//æ‰“è¡¨
 
-		int addRow();//Ôö¼ÓĞĞ
+		int addRow();//å¢åŠ è¡Œ
 
-		void delRow(int n);//É¾³ınĞĞ
+		void delRow(int n);//åˆ é™¤nè¡Œ
 
-		int addColumn();//Ôö¼ÓÁĞ //ÓĞµãÎÊÌâ,Ôö¼Óµ½ÄÄ¸öÎ»ÖÃ???
+		int addColumn();//å¢åŠ åˆ— //æœ‰ç‚¹é—®é¢˜,å¢åŠ åˆ°å“ªä¸ªä½ç½®???
 
-		void delColumn(int n);//É¾³ıµÚnÁĞ
+		void delColumn(int n);//åˆ é™¤ç¬¬nåˆ—
 		
 		void set(int a,int b,int c);
 
@@ -196,35 +196,35 @@ Table::show(){
 
 int main() {
 
-	Table tb;//³õÊ¼»¯±í(Î´¹¹Ôì) 
+	Table tb;//åˆå§‹åŒ–è¡¨(æœªæ„é€ ) 
 
-	tb.show();//ÏÔÊ¾±íµÄÄÚÈİ
+	tb.show();//æ˜¾ç¤ºè¡¨çš„å†…å®¹
 
-	tb.addRow();//Ôö¼Ó±íµÄĞĞ
+	tb.addRow();//å¢åŠ è¡¨çš„è¡Œ
 
-	tb.show();//ÖØÏÖ±í
+	tb.show();//é‡ç°è¡¨
 
-	tb.addColumn();//Ôö¼Ó±íµÄÁĞ
+	tb.addColumn();//å¢åŠ è¡¨çš„åˆ—
 
-	tb.show();//ÔÙÏÖ±í
+	tb.show();//å†ç°è¡¨
 
-	Table tb1(5,5);//¹¹Ôìº¯Êı³õÊ¼»¯±í--°´5*5
+	Table tb1(5,5);//æ„é€ å‡½æ•°åˆå§‹åŒ–è¡¨--æŒ‰5*5
 
 	tb1.show();//
 
-	tb1.set(1,1,30);//Î»µã(1,1)³õÊ¼»¯
+	tb1.set(1,1,30);//ä½ç‚¹(1,1)åˆå§‹åŒ–
 
-	tb1.set(2,2,"hello");//Î»µã(2,2)¸Ä
+	tb1.set(2,2,"hello");//ä½ç‚¹(2,2)æ”¹
 
-	tb1.show();//ÖØÏÖ±í
+	tb1.show();//é‡ç°è¡¨
 
-	tb1.delRow(1);//É¾³ıĞĞ1
+	tb1.delRow(1);//åˆ é™¤è¡Œ1
 
-	tb1.show();//ÏÔÊ¾±í
+	tb1.show();//æ˜¾ç¤ºè¡¨
 
-	tb1.delColumn(1);//É¾³ıÁĞ 1
+	tb1.delColumn(1);//åˆ é™¤åˆ— 1
 
-	tb1.show();//ÖØÏÖ±í
+	tb1.show();//é‡ç°è¡¨
 
 	return 0;
 
